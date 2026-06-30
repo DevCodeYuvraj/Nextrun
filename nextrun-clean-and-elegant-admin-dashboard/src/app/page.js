@@ -7,8 +7,3 @@ export default function Dashboard() {
     </MainLayout>
   );
 }
-export default function Home() {
-  return (
-    <h1>Nextrun Dashboard</h1>
-  );
-}
