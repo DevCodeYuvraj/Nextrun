@@ -39,12 +39,6 @@ img {
   min-height: 100vh;
 }
 
-.sidebar {
-  width: 260px;
-  background: white;
-  border-right: 1px solid var(--border);
-  padding: 20px;
-}
 
 .main {
   flex: 1;
