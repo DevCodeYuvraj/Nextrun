@@ -1,0 +1,29 @@
+:root {
+  /* Primary Colors */
+  --primary: #4F46E5;
+  --cyan: #19C6F4;
+  --purple: #7C3AED;
+  --pink: #EC4899;
+  --green: #22C55E;
+  --red: #EF4444;
+
+  /* Background */
+  --background: #F5F7FB;
+  --surface: #FFFFFF;
+
+  /* Text */
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+
+  /* Border */
+  --border: #E5E7EB;
+
+  /* Shadow */
+  --shadow: 0 8px 24px rgba(0,0,0,.08);
+
+  /* Radius */
+  --radius: 14px;
+
+  /* Transition */
+  --transition: .3s ease;
+}
