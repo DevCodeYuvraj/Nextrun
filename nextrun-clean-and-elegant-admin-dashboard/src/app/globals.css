@@ -45,16 +45,6 @@ img {
   display: flex;
   flex-direction: column;
 }
-
-.header {
-  height: 80px;
-  background: white;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
-}
-
 .content {
   flex: 1;
   padding: 30px;
