@@ -1,5 +1,9 @@
-export default function Home() {
+import MainLayout from "@/components/layout/MainLayout";
+
+export default function Dashboard() {
   return (
-    <h1>Nextrun Dashboard</h1>
+    <MainLayout>
+      Dashboard Content
+    </MainLayout>
   );
 }
