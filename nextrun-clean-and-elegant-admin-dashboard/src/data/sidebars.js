@@ -1,0 +1,33 @@
+import {
+  MdDashboard,
+  MdEmail,
+  MdContacts,
+  MdCurrencyBitcoin,
+  MdViewKanban,
+  MdReceipt,
+  MdAccountBalance,
+  MdConfirmationNumber,
+  MdFolder,
+  MdPerson,
+  MdCalendarMonth,
+  MdChecklist,
+  MdChat,
+  MdAccessTime,
+} from "react-icons/md";
+
+export const sidebarItems = [
+  { title: "Dashboard", icon: MdDashboard },
+  { title: "Email", icon: MdEmail },
+  { title: "Contacts", icon: MdContacts },
+  { title: "Crypto", icon: MdCurrencyBitcoin },
+  { title: "Kanban", icon: MdViewKanban },
+  { title: "Invoice", icon: MdReceipt },
+  { title: "Banking", icon: MdAccountBalance },
+  { title: "Ticketing", icon: MdConfirmationNumber },
+  { title: "File Manager", icon: MdFolder },
+  { title: "User", icon: MdPerson },
+  { title: "Calendar", icon: MdCalendarMonth },
+  { title: "Todo List", icon: MdChecklist },
+  { title: "Chat", icon: MdChat },
+  { title: "Latest Activity", icon: MdAccessTime },
+];
