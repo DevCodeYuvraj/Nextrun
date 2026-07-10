@@ -1,0 +1,17 @@
+.rightPanel {
+  width: 280px;
+  min-width: 280px;
+  min-height: 100vh;
+
+  padding: 30px 22px;
+
+  background: #eef2f7;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.placeholder {
+  min-height: 180px;
+}

@@ -1,27 +1,39 @@
-import styles from "./Sidebar.module.css";
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 import { sidebarItems } from "@/data/sidebar";
 
+import styles from "./Sidebar.module.css";
+
 export default function Sidebar() {
+  const pathname = usePathname();
+
   return (
     <aside className={styles.sidebar}>
-      <div className={styles.logo}>
-        Nex<span>trun.</span>
-      </div>
+      <Link href="/dashboard" className={styles.logo}>
+        Next<span>run.</span>
+      </Link>
 
-      <nav className={styles.nav}>
-        {sidebarItems.map((item, index) => {
+      <nav className={styles.navigation}>
+        {sidebarItems.map((item) => {
           const Icon = item.icon;
 
+          const isActive = pathname === item.path;
+
           return (
-            <div
-              key={item.title}
-              className={`${styles.item} ${
-                index === 0 ? styles.active : ""
+            <Link
+              key={item.id}
+              href={item.path}
+              className={`${styles.navItem} ${
+                isActive ? styles.active : ""
               }`}
             >
-              <Icon size={20} />
+              <Icon className={styles.navIcon} />
+
               <span>{item.title}</span>
-            </div>
+            </Link>
           );
         })}
       </nav>

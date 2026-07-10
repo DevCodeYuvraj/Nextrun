@@ -1,18 +1,23 @@
 import Sidebar from "./Sidebar";
 import Header from "./Header";
+import RightPanel from "./RightPanel";
+
+import styles from "./MainLayout.module.css";
 
 export default function MainLayout({ children }) {
   return (
-    <div className="layout">
+    <div className={styles.layout}>
       <Sidebar />
 
-      <div className="main">
+      <div className={styles.centerArea}>
         <Header />
 
-        <main className="content">
+        <main className={styles.content}>
           {children}
         </main>
       </div>
+
+      <RightPanel />
     </div>
   );
 }
