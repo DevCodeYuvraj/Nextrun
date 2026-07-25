@@ -1,0 +1,162 @@
+.column {
+  background: #f7f8fc;
+  border-radius: 24px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 720px;
+
+  transition: box-shadow .25s ease;
+}
+
+.column:hover {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, .05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #4b7cff;
+}
+
+.titleWrapper h3 {
+  margin: 0;
+
+  color: #202224;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.count {
+  min-width: 28px;
+  height: 28px;
+
+  padding: 0 8px;
+
+  border-radius: 999px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #7d8da6;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.menuButton {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+.menuButton svg {
+  font-size: 20px;
+  color: #98a2b3;
+}
+
+.menuButton:hover {
+  background: #edf2fb;
+}
+
+.cardList {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  min-height: 200px;
+}
+
+.addButton {
+  width: 100%;
+  height: 52px;
+
+  margin-top: 20px;
+
+  border: 2px dashed #dbe3f0;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  color: #697586;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+.addButton svg {
+  font-size: 18px;
+}
+
+.addButton:hover {
+  color: #4b7cff;
+  border-color: #4b7cff;
+  background: #f8faff;
+}
+
+@media (max-width:1200px) {
+  .column {
+    min-height: auto;
+  }
+}
+
+@media (max-width:768px) {
+  .column {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .titleWrapper h3 {
+    font-size: 17px;
+  }
+
+  .cardList {
+    gap: 16px;
+  }
+}

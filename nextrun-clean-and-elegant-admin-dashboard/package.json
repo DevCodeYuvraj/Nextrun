@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
-    "apexcharts": "^5.15.2",
+    "apexcharts": "^5.16.0",
     "axios": "^1.18.1",
     "bootstrap": "^5.3.8",
+    "lightweight-charts": "^4.2.3",
+    "lucide-react": "^1.26.0",
     "next": "16.2.9",
     "react": "19.2.4",
     "react-apexcharts": "^2.1.1",

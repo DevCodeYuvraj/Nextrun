@@ -26,7 +26,13 @@ export default function MailCard({
       }`}
       onClick={() => onSelectMail(mail.id)}
     >
-      <div className={styles.avatar}></div>
+      {/* Avatar */}
+
+      <div className={styles.avatar}>
+        {mail.sender.charAt(0).toUpperCase()}
+      </div>
+
+      {/* Mail Body */}
 
       <div className={styles.mailBody}>
         <div className={styles.mailTop}>

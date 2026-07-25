@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { MdEmail } from "react-icons/md";
 
-import { contacts } from "@/data/contacts";
+import { initialContacts as contacts } from "@/data/contacts";
 
 import styles from "./Contacts.module.css";
 
@@ -30,7 +30,9 @@ export default function Contacts() {
             key={contact.id}
             className={styles.contactItem}
           >
-            <div className={styles.avatar} />
+            <div className={styles.avatar}>
+              {contact.avatar}
+            </div>
 
             <div className={styles.contactInfo}>
               <h4 className={styles.name}>
@@ -38,7 +40,7 @@ export default function Contacts() {
               </h4>
 
               <p className={styles.role}>
-                {contact.role}
+                {contact.position} • {contact.company}
               </p>
             </div>
 

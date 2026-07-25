@@ -1,0 +1,180 @@
+.page {
+  width: 100%;
+  min-width: 0;
+}
+
+/* =========================================
+   CRYPTO PAGE
+========================================= */
+
+.layout {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 310px;
+
+  align-items: stretch;
+
+  /*
+    No gap here because the Figma right panel has
+    its own padding and background.
+  */
+  gap: 0;
+}
+
+/* =========================================
+   LEFT / MAIN CONTENT
+========================================= */
+
+.mainContent {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  /*
+    Creates the visual separation before the
+    right-side panel.
+  */
+  padding-right: 30px;
+}
+
+/* =========================================
+   RIGHT PANEL
+========================================= */
+
+.sidebar {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  /*
+    Figma right-column background
+  */
+  background: #eef2f7;
+
+  /*
+    Extend through the surrounding MainLayout
+    content padding so the panel visually reaches
+    the outer right edge.
+  */
+  margin-top: -24px;
+  margin-right: -24px;
+  margin-bottom: -24px;
+
+  padding:
+    26px
+    24px
+    32px
+    26px;
+
+  align-self: stretch;
+}
+
+.sidebar > * {
+  width: 100%;
+  min-width: 0;
+}
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1600px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr) 330px;
+  }
+
+  .mainContent {
+    padding-right: 32px;
+  }
+
+  .sidebar {
+    padding-left: 28px;
+  }
+}
+
+/* =========================================
+   NORMAL DESKTOP
+========================================= */
+
+@media (max-width: 1400px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr) 290px;
+  }
+
+  .mainContent {
+    padding-right: 24px;
+  }
+
+  .sidebar {
+    padding-left: 22px;
+    padding-right: 20px;
+  }
+}
+
+/* =========================================
+   RIGHT COLUMN MOVES BELOW MAIN CONTENT
+========================================= */
+
+@media (max-width: 1180px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mainContent {
+    padding-right: 0;
+  }
+
+  .sidebar {
+    margin:
+      6px
+      -20px
+      -20px;
+
+    padding:
+      24px
+      20px
+      28px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 28px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .mainContent {
+    gap: 20px;
+  }
+
+  .sidebar {
+    margin:
+      4px
+      -16px
+      -16px;
+
+    padding:
+      22px
+      16px
+      26px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 26px;
+  }
+}

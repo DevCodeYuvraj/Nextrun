@@ -26,14 +26,13 @@ import styles from "./PreviewPanel.module.css";
 
 export default function PreviewPanel({ mail }) {
     const [reply, setReply] = useState("");
+
     if (!mail) {
         return (
             <aside className={styles.previewPanel}>
                 <div className={styles.previewTop}>
                     <div>
-                        <h2 className={styles.previewTitle}>
-                            Preview
-                        </h2>
+                        <h2 className={styles.previewTitle}>Preview</h2>
 
                         <span className={styles.inboxText}>
                             No email selected
@@ -47,23 +46,22 @@ export default function PreviewPanel({ mail }) {
     function handleSend() {
         if (!reply.trim()) return;
 
-        console.log("Message sent:", reply);
+        console.log("Reply:", reply);
 
         setReply("");
     }
 
     return (
         <aside className={styles.previewPanel}>
-            {/* TOP SECTION */}
+            {/* ================= HEADER ================= */}
 
             <div className={styles.previewTop}>
                 <div>
-                    <h2 className={styles.previewTitle}>
-                        Preview
-                    </h2>
+                    <h2 className={styles.previewTitle}>Preview</h2>
 
                     <span className={styles.inboxText}>
-                        Inbox
+                        {mail.folder.charAt(0).toUpperCase() +
+                            mail.folder.slice(1)}
                     </span>
                 </div>
 
@@ -82,7 +80,7 @@ export default function PreviewPanel({ mail }) {
                 </div>
             </div>
 
-            {/* LABEL ROW */}
+            {/* ================= LABEL ================= */}
 
             <div className={styles.labelRow}>
                 {mail.badge ? (
@@ -92,7 +90,7 @@ export default function PreviewPanel({ mail }) {
                                 : styles.importantLabel
                             }`}
                     >
-                        <MdBookmark />
+                        <MdBookmark size={13} />
 
                         <span>{mail.badge}</span>
                     </div>
@@ -106,28 +104,35 @@ export default function PreviewPanel({ mail }) {
                     </button>
 
                     <button type="button">
-                        <MdStar />
+                        <MdStar
+                            color={
+                                mail.starred
+                                    ? "#FFC107"
+                                    : "#BFC8D7"
+                            }
+                        />
                     </button>
                 </div>
             </div>
 
-            {/* SUBJECT */}
+            {/* ================= SUBJECT ================= */}
 
             <h3 className={styles.subject}>
-                {mail.subject ||
-                    "Weekly Meeting Schedule with Stakeholders"}
+                {mail.subject}
             </h3>
 
-            {/* DATE */}
+            {/* ================= DATE ================= */}
 
             <p className={styles.date}>
                 {mail.date}
             </p>
 
-            {/* SENDER */}
+            {/* ================= SENDER ================= */}
 
             <div className={styles.sender}>
-                <div className={styles.avatar} />
+                <div className={styles.avatar}>
+                    {mail.sender.charAt(0).toUpperCase()}
+                </div>
 
                 <div className={styles.senderDetails}>
                     <h4>{mail.sender}</h4>
@@ -136,34 +141,26 @@ export default function PreviewPanel({ mail }) {
                 </div>
             </div>
 
-            {/* MESSAGE */}
+            {/* ================= MESSAGE ================= */}
 
             <div className={styles.message}>
-                <p>Hi Nella,</p>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                </p>
-
-                <p>
-                    Regards,
-                    <br />
-                    {mail.sender?.split(" ")[0]}
-                </p>
+                {mail.fullMessage
+                    .split("\n")
+                    .map((line, index) => (
+                        <p key={index}>{line}</p>
+                    ))}
             </div>
 
-            {/* REPLY SECTION */}
+            {/* ================= REPLY ================= */}
 
             <div className={styles.replySection}>
                 <div className={styles.editor}>
                     <textarea
+                        placeholder="Write your message here..."
                         value={reply}
                         onChange={(event) =>
                             setReply(event.target.value)
                         }
-                        placeholder="Write your message here..."
                     />
 
                     <div className={styles.formatToolbar}>

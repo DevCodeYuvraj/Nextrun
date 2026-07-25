@@ -7,8 +7,6 @@ export default function DashboardLayout({ children }) {
   return (
     <div className={styles.dashboardLayout}>
       <div className={styles.centerArea}>
-        <Header />
-
         <main className={styles.content}>
           {children}
         </main>

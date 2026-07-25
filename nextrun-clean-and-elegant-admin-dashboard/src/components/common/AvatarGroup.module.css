@@ -1,0 +1,50 @@
+.group {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+
+  margin-left: -10px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  border: 2px solid #fff;
+
+  flex-shrink: 0;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.more {
+  width: 34px;
+  height: 34px;
+
+  margin-left: -10px;
+
+  border-radius: 50%;
+
+  background: #edf3ff;
+
+  color: #4b7cff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  border: 2px solid #fff;
+}

@@ -1,8 +1,4 @@
 export const initialMails = [
-  // =========================
-  // INBOX
-  // =========================
-
   {
     id: 1,
     sender: "Samantha William",
@@ -11,14 +7,19 @@ export const initialMails = [
     message:
       "Architecto consequatur molestias repellat qui. Quia est sed doloremque veniam est rerum.",
     fullMessage:
-      "Hi Nella,\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nRegards,\nSamantha",
+      "Hi Nella,\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\nI wanted to share the latest meeting schedule with all stakeholders. Please review the agenda and let me know if any changes are required before tomorrow.\n\nThanks,\nSamantha",
     time: "2h ago",
     date: "Today, March 30th 2021 | 04:45 PM",
-    starred: false,
-    attachment: true,
     folder: "inbox",
     category: "primary",
+    starred: false,
+    unread: true,
+    attachment: true,
+    notification: null,
+    badge: null,
+    badgeColor: null,
     label: null,
+    avatar: "/images/avatar-1.png",
   },
 
   {
@@ -29,16 +30,19 @@ export const initialMails = [
     message:
       "Architecto consequatur molestias repellat qui. Quia est sed doloremque veniam est rerum.",
     fullMessage:
-      "Hello,\n\nHere is the latest progress update regarding our current project.\n\nRegards,\nTony",
-    time: "18min ago",
-    date: "Today, March 30th 2021 | 03:30 PM",
-    starred: true,
+      "Hi Nella,\n\nHere is the latest update regarding our project. Development is progressing according to schedule and all pending tasks from the previous sprint have now been completed.\n\nRegards,\nTony",
+    time: "18 min ago",
+    date: "Today, March 30th 2021 | 03:28 PM",
     folder: "inbox",
     category: "primary",
+    starred: true,
+    unread: true,
+    attachment: false,
+    notification: 2,
     badge: "Important",
     badgeColor: "important",
     label: "important",
-    notification: 2,
+    avatar: "/images/avatar-2.png",
   },
 
   {
@@ -47,16 +51,21 @@ export const initialMails = [
     email: "jordan@email.com",
     subject: "Social Media Campaign",
     message:
-      "The new social media campaign is ready for review.",
+      "The new social media campaign is now ready for review.",
     fullMessage:
-      "Hello,\n\nThe new social media campaign is ready for review. Please send your feedback.\n\nRegards,\nJordan",
-    time: "18min ago",
-    date: "Today, March 30th 2021 | 03:15 PM",
-    starred: true,
+      "Hello,\n\nThe social media campaign is now complete. Please review all creatives before publishing.\n\nRegards,\nJordan",
+    time: "18 min ago",
+    date: "Today, March 30th 2021 | 03:11 PM",
     folder: "inbox",
     category: "socials",
-    label: "read",
+    starred: true,
+    unread: false,
+    attachment: false,
     notification: 1,
+    badge: null,
+    badgeColor: null,
+    label: "read",
+    avatar: "/images/avatar-3.png",
   },
 
   {
@@ -65,38 +74,44 @@ export const initialMails = [
     email: "karen@email.com",
     subject: "Website Design Update",
     message:
-      "The latest website design screens are ready for review.",
+      "Latest website design screens are ready.",
     fullMessage:
-      "Hi,\n\nI have completed the latest website design update. Please send me your feedback.\n\nRegards,\nKaren",
-    time: "18min ago",
-    date: "Today, March 30th 2021 | 03:00 PM",
-    starred: false,
+      "Hi Nella,\n\nI have finished the latest website screens and uploaded all the design assets. Please review everything before tomorrow's client presentation.\n\nRegards,\nKaren",
+    time: "18 min ago",
+    date: "Today, March 30th 2021 | 02:56 PM",
     folder: "inbox",
     category: "promotion",
+    starred: false,
+    unread: false,
+    attachment: true,
+    notification: null,
     badge: "Work in Progress",
     badgeColor: "work",
     label: "work",
+    avatar: "/images/avatar-4.png",
   },
-
-  // =========================
-  // SENT
-  // =========================
 
   {
     id: 5,
     sender: "You",
     email: "me@nextrun.com",
-    subject: "Dashboard Analytics",
+    subject: "Dashboard Analytics Report",
     message:
-      "The latest dashboard analytics report is attached.",
+      "Latest dashboard analytics attached.",
     fullMessage:
-      "Hello,\n\nPlease find the latest dashboard analytics report attached.\n\nRegards,\nNella",
+      "Hello Team,\n\nPlease find attached the latest dashboard analytics report.\n\nRegards,\nNella",
     time: "Yesterday",
     date: "Yesterday | 02:30 PM",
-    starred: false,
     folder: "sent",
     category: "primary",
+    starred: false,
+    unread: false,
+    attachment: true,
+    notification: null,
+    badge: null,
+    badgeColor: null,
     label: null,
+    avatar: "/images/avatar-5.png",
   },
 
   {
@@ -105,81 +120,89 @@ export const initialMails = [
     email: "me@nextrun.com",
     subject: "Client Proposal",
     message:
-      "Here is the proposal we discussed.",
+      "Proposal sent successfully.",
     fullMessage:
-      "Hello,\n\nHere is the client proposal we discussed during our meeting.\n\nRegards,\nNella",
+      "Hello,\n\nPlease find attached the client proposal.\n\nRegards,\nNella",
     time: "Yesterday",
-    date: "Yesterday | 11:45 AM",
-    starred: true,
+    date: "Yesterday | 11:15 AM",
     folder: "sent",
     category: "primary",
-    label: "important",
+    starred: true,
+    unread: false,
+    attachment: true,
+    notification: null,
     badge: "Important",
     badgeColor: "important",
+    label: "important",
+    avatar: "/images/avatar-5.png",
   },
-
-  // =========================
-  // DRAFT
-  // =========================
 
   {
     id: 7,
     sender: "Draft",
     email: "",
-    subject: "Upcoming Project",
+    subject: "Upcoming Project Discussion",
     message:
-      "This email has not been sent yet.",
+      "Draft message...",
     fullMessage:
-      "Hello,\n\nI wanted to discuss our upcoming project...",
+      "This email is still in draft.",
     time: "1 day ago",
-    date: "March 29th 2021 | 05:30 PM",
-    starred: false,
+    date: "March 29th 2021 | 05:20 PM",
     folder: "draft",
     category: "primary",
-    label: "work",
+    starred: false,
+    unread: false,
+    attachment: false,
+    notification: null,
     badge: "Work in Progress",
     badgeColor: "work",
+    label: "work",
+    avatar: "/images/avatar-6.png",
   },
-
-  // =========================
-  // DELETED
-  // =========================
 
   {
     id: 8,
     sender: "Alex Morgan",
     email: "alex@email.com",
-    subject: "Old Meeting Notes",
+    subject: "Meeting Notes",
     message:
-      "Notes from our previous meeting.",
+      "Previous meeting notes.",
     fullMessage:
-      "Hello,\n\nHere are the notes from our previous meeting.\n\nRegards,\nAlex",
+      "Attached are the notes from our previous meeting.",
     time: "3 days ago",
-    date: "March 27th 2021 | 01:20 PM",
-    starred: false,
+    date: "March 27th 2021 | 09:00 AM",
     folder: "deleted",
     category: "primary",
+    starred: false,
+    unread: false,
+    attachment: false,
+    notification: null,
+    badge: null,
+    badgeColor: null,
     label: null,
+    avatar: "/images/avatar-7.png",
   },
-
-  // =========================
-  // OFFER
-  // =========================
 
   {
     id: 9,
     sender: "Nextrun Team",
-    email: "team@nextrun.com",
-    subject: "Special Dashboard Offer",
+    email: "offers@nextrun.com",
+    subject: "Special Offer",
     message:
-      "Take advantage of our latest dashboard offer.",
+      "Latest premium dashboard offer.",
     fullMessage:
-      "Hello,\n\nWe have prepared a special dashboard offer for you.\n\nRegards,\nNextrun Team",
+      "Upgrade to Premium and unlock additional dashboard features.",
     time: "4 days ago",
     date: "March 26th 2021 | 10:00 AM",
-    starred: false,
     folder: "inbox",
     category: "promotion",
+    starred: false,
+    unread: false,
+    attachment: false,
+    notification: null,
+    badge: null,
+    badgeColor: null,
     label: "offers",
+    avatar: "/images/avatar-8.png",
   },
 ];
