@@ -1,0 +1,123 @@
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #f1f4fb;
+  box-shadow: 0 10px 30px rgba(31, 41, 55, 0.05);
+
+  min-height: 235px;
+  padding: 54px 22px 20px;
+
+  overflow: visible;
+  transition: all .25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(31, 41, 55, 0.08);
+}
+.menu{
+  position:absolute;
+  top:18px;
+  right:18px;
+  width:32px;
+  height:32px;
+  border:none;
+  background:none;
+  color:#a4acbc;
+  cursor:pointer;
+}
+.avatarWrapper {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.avatar,
+.placeholder {
+  width: 74px;
+  height: 74px;
+  border-radius: 10px;
+}
+
+.placeholder {
+  background: #aeb7c6;
+}
+
+
+.card h3 {
+  margin: 0;
+  height: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  color: #202224;
+}
+
+.position {
+  margin-top: 4px;
+  text-align: center;
+
+  font-size: 11px;
+  color: #9ba4b4;
+}
+
+.company {
+  margin-top: 2px;
+  margin-bottom: 18px;
+
+  text-align: center;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: #4F46E5;
+}
+.contactInfo {
+  border-top: 1px solid #edf2f7;
+
+  padding-top: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 6px;
+
+  background: #4F46E5;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.row span {
+  font-size: 11px;
+  color: #4b5563;
+}
