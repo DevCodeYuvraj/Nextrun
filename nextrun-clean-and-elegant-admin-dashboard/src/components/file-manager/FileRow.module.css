@@ -1,0 +1,133 @@
+.row {
+  position: relative;
+
+  height: 78px;
+
+  background: #ffffff;
+}
+
+.row:nth-child(odd) {
+  background: #f8f9fb;
+}
+
+.row:nth-child(even) {
+  background: #ffffff;
+}
+
+.row td {
+  position: relative;
+
+  padding: 10px 15px;
+
+  border: 0;
+
+  vertical-align: middle;
+}
+
+.nameCell {
+  padding-left: 27px !important;
+}
+
+/* =========================
+   FILE NAME
+========================= */
+
+.file {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  color: #ffffff;
+
+  font-size: 23px;
+}
+
+.folder {
+  background: #9faaba;
+}
+
+.video {
+  background: #e928a9;
+}
+
+.music {
+  background: #7415ce;
+}
+
+.image {
+  background: #3549d8;
+}
+
+.document {
+  background: #202224;
+}
+
+.fileName {
+  min-width: 0;
+
+  overflow: hidden;
+
+  color: #303238;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* =========================
+   META
+========================= */
+
+.meta {
+  display: block;
+
+  overflow: hidden;
+
+  color: #9da4af;
+
+  font-size: 10px;
+  font-weight: 400;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.size {
+  color: #303238;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   ACTION
+========================= */
+
+.actionCell {
+  overflow: visible;
+
+  padding-left: 0 !important;
+  padding-right: 20px !important;
+
+  text-align: right;
+}

@@ -1,0 +1,137 @@
+.card {
+  width: 100%;
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 35px
+    rgba(28, 39, 49, 0.035);
+}
+
+.header {
+  height: 67px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 24px;
+
+  border-bottom:
+    1px solid #f1f2f5;
+}
+
+.header h3 {
+  margin: 0;
+
+  color: #202224;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.timeline {
+  padding:
+    25px 23px
+    15px;
+}
+
+.activity {
+  display: grid;
+
+  grid-template-columns:
+    20px
+    minmax(0, 1fr);
+
+  gap: 10px;
+
+  min-height: 104px;
+}
+
+.timelineColumn {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  position: relative;
+
+  z-index: 2;
+
+  width: 12px;
+  height: 12px;
+
+  flex: 0 0 12px;
+
+  margin-top: 3px;
+
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 0 2px
+    currentColor;
+}
+
+.line {
+  position: absolute;
+
+  top: 20px;
+  bottom: -3px;
+  left: 50%;
+
+  width: 1px;
+
+  background: #e2e5eb;
+
+  transform: translateX(-50%);
+}
+
+.activityContent {
+  min-width: 0;
+
+  padding-bottom: 23px;
+}
+
+.activityContent p {
+  margin: 0 0 9px;
+
+  color: #7d8490;
+
+  font-size: 9px;
+  line-height: 1.75;
+}
+
+.activityContent strong {
+  color: #303238;
+
+  font-weight: 600;
+}
+
+.highlight {
+  font-weight: 500;
+}
+
+.date {
+  color: #b0b5be;
+
+  font-size: 8px;
+}
+
+.purple {
+  color: #7415ce;
+}
+
+.cyan {
+  color: #10b9d7;
+}
+
+.blue {
+  color: #3549d8;
+}

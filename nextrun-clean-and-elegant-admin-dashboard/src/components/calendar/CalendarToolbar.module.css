@@ -1,0 +1,171 @@
+.toolbar {
+  min-height: 106px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+
+  padding: 23px 29px 18px;
+}
+
+/* =========================
+   MONTH
+========================= */
+
+.monthSelector {
+  position: relative;
+
+  min-width: 190px;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.monthSelector select {
+  width: 100%;
+
+  padding:
+    0 30px
+    0 0;
+
+  border: 0;
+  outline: 0;
+
+  appearance: none;
+
+  background: transparent;
+
+  color: #202224;
+
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.monthSelector svg {
+  position: absolute;
+
+  right: 0;
+
+  width: 21px;
+  height: 21px;
+
+  pointer-events: none;
+
+  color: #9ca5b2;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.actions {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.viewButtons {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.viewButtons button {
+  min-width: 90px;
+  height: 48px;
+
+  padding: 0 17px;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  background: #f3f3f7;
+
+  color: #202224;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.viewButtons button.active {
+  border-color: #3549d8;
+
+  background: #f4f5fb;
+
+  color: #3549d8;
+}
+
+.newSchedule {
+  min-width: 158px;
+  height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 3px;
+
+  padding: 0 19px;
+
+  border: 0;
+  border-radius: 5px;
+
+  background: #3549d8;
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.newSchedule svg {
+  width: 17px;
+  height: 17px;
+}
+
+@media (max-width: 900px) {
+  .toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .actions {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 650px) {
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .viewButtons {
+    display: grid;
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .viewButtons button {
+    min-width: 0;
+  }
+
+  .newSchedule {
+    width: 100%;
+  }
+}

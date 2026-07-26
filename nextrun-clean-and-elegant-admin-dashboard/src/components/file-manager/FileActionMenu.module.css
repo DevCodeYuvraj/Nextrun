@@ -1,0 +1,206 @@
+.wrapper {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   TRIGGER
+========================= */
+
+.trigger {
+  width: 32px;
+  height: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #9ba3ae;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.trigger:hover,
+.trigger[aria-expanded="true"] {
+  background: #f0f2f7;
+
+  color: #3549d8;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+  position: absolute;
+
+  top: calc(100% + 4px);
+  right: 0;
+
+  z-index: 100;
+
+  width: 155px;
+
+  overflow: hidden;
+
+  padding: 6px;
+
+  border: 1px solid #eceef3;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 15px 35px
+    rgba(32, 34, 36, 0.12);
+
+  text-align: left;
+}
+
+.menuItem {
+  width: 100%;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 10px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #59606b;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  background: #f6f7fa;
+
+  color: #3549d8;
+}
+
+.menuItem svg {
+  width: 16px;
+  height: 16px;
+
+  flex: 0 0 16px;
+}
+
+.divider {
+  height: 1px;
+
+  margin: 5px 4px;
+
+  background: #eef0f4;
+}
+
+.delete {
+  color: #f04444;
+}
+
+.delete:hover {
+  background: #fff4f4;
+
+  color: #f04444;
+}
+
+/* =========================
+   RENAME
+========================= */
+
+.renameForm {
+  padding: 7px;
+}
+
+.renameForm > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #303238;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.renameForm input {
+  width: 100%;
+  height: 34px;
+
+  padding: 0 9px;
+
+  border: 1px solid #dfe3ea;
+  border-radius: 6px;
+  outline: 0;
+
+  color: #303238;
+
+  font-family: inherit;
+  font-size: 9px;
+}
+
+.renameForm input:focus {
+  border-color: #3549d8;
+}
+
+.renameActions {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 6px;
+
+  margin-top: 8px;
+}
+
+.renameActions button {
+  height: 29px;
+
+  padding: 0 9px;
+
+  border: 0;
+  border-radius: 5px;
+
+  font-family: inherit;
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+.renameActions button:first-child {
+  background: #f1f2f5;
+
+  color: #727986;
+}
+
+.renameActions button:last-child {
+  background: #3549d8;
+
+  color: #ffffff;
+}

@@ -1,0 +1,42 @@
+.card {
+  width: 100%;
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 35px
+    rgba(28, 39, 49, 0.025);
+}
+
+.content {
+  min-width: 0;
+
+  padding:
+    0 29px
+    30px;
+}
+
+.pendingView {
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #a0a7b2;
+
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .content {
+    padding:
+      0 18px
+      20px;
+  }
+}
