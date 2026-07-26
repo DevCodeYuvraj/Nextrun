@@ -1,0 +1,159 @@
+.card {
+  width: 100%;
+  min-width: 0;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  padding: 26px 26px 20px;
+
+  box-shadow: 0 8px 30px rgba(32, 34, 36, 0.045);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  margin-bottom: 22px;
+}
+
+.header h3 {
+  margin: 0;
+
+  color: #202224;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.header p {
+  margin: 5px 0 0;
+
+  color: #a1a6b0;
+
+  font-size: 12px;
+}
+
+.searchBox {
+  width: 250px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 14px;
+
+  border: 1px solid #e8ebf1;
+  border-radius: 10px;
+
+  background: #ffffff;
+}
+
+.searchBox svg {
+  flex-shrink: 0;
+
+  color: #a4acb9;
+
+  font-size: 20px;
+}
+
+.searchBox input {
+  width: 100%;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #202224;
+
+  font-size: 13px;
+}
+
+.searchBox input::placeholder {
+  color: #adb3bd;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 760px;
+
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 13px 12px;
+
+  border-bottom: 1px solid #eef0f4;
+
+  color: #9298a3;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 16px 12px;
+
+  border-bottom: 1px solid #f0f2f5;
+
+  color: #666d78;
+
+  font-size: 13px;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.checkboxColumn {
+  width: 42px;
+}
+
+.checkboxColumn input {
+  width: 17px;
+  height: 17px;
+
+  cursor: pointer;
+
+  accent-color: #5b5fef;
+}
+
+.actionHeading {
+  text-align: right !important;
+}
+
+.empty {
+  padding: 50px 20px !important;
+
+  color: #9298a3 !important;
+
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  .header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .searchBox {
+    width: 100%;
+  }
+}

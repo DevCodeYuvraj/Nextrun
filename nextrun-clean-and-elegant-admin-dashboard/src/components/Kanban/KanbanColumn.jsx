@@ -1,8 +1,9 @@
 "use client";
 
-import { memo } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import { MdAdd, MdMoreHoriz } from "react-icons/md";
 
+import ColumnMenu from "./ColumnMenu";
 import TaskCard from "./TaskCard";
 import styles from "./KanbanColumn.module.css";
 
@@ -14,7 +15,35 @@ function KanbanColumn({
   onCardDragStart,
   onEditCard,
   onDeleteCard,
+  onDuplicateCard,
+
+  // NEW
+  onRenameColumn,
+  onDuplicateColumn,
+  onDeleteColumn,
 }) {
+  const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () =>
+      document.removeEventListener(
+        "mousedown",
+        handleClickOutside
+      );
+  }, []);
+
   return (
     <section
       className={styles.column}
@@ -33,12 +62,42 @@ function KanbanColumn({
           </span>
         </div>
 
-        <button
-          className={styles.menuButton}
-          aria-label={`${column.title} options`}
+        <div
+          ref={menuRef}
+          style={{
+            position: "relative",
+          }}
         >
-          <MdMoreHoriz />
-        </button>
+          <button
+            className={styles.menuButton}
+            onClick={() =>
+              setShowMenu((prev) => !prev)
+            }
+          >
+            <MdMoreHoriz />
+          </button>
+
+          {showMenu && (
+            <ColumnMenu
+              onRename={() => {
+                setShowMenu(false);
+                onRenameColumn(column);
+              }}
+              onAddCard={() => {
+                setShowMenu(false);
+                onAddCard(column.id);
+              }}
+              onDuplicate={() => {
+                setShowMenu(false);
+                onDuplicateColumn(column);
+              }}
+              onDelete={() => {
+                setShowMenu(false);
+                onDeleteColumn(column.id);
+              }}
+            />
+          )}
+        </div>
       </div>
 
       {/* Cards */}
@@ -51,6 +110,7 @@ function KanbanColumn({
             onDragStart={onCardDragStart}
             onEdit={onEditCard}
             onDelete={onDeleteCard}
+            onDuplicate={onDuplicateCard}
           />
         ))}
       </div>

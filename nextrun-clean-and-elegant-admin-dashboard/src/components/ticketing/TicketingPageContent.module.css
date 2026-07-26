@@ -1,0 +1,46 @@
+.page {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.contentGrid {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    310px
+    minmax(0, 1fr);
+
+  gap: 30px;
+
+  align-items: stretch;
+}
+
+@media (max-width: 1250px) {
+  .contentGrid {
+    grid-template-columns:
+      280px
+      minmax(0, 1fr);
+
+    gap: 22px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,44 @@
+.dropdown {
+  position: absolute;
+  top: 48px;
+  left: 0;
+
+  width: 220px;
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+
+  overflow: hidden;
+
+  z-index: 1000;
+}
+
+.dropdown button {
+  width: 100%;
+
+  border: none;
+
+  background: white;
+
+  text-align: left;
+
+  padding: 14px 18px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: .2s;
+}
+
+.dropdown button:hover {
+  background: #f5f7fb;
+}
+
+.active {
+  color: #4f46e5;
+  font-weight: 600;
+}

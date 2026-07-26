@@ -1,0 +1,135 @@
+.card {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px 30px 24px;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 35px rgba(28, 39, 49, 0.035);
+}
+
+.header {
+  position: relative;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+}
+
+.header h3 {
+  margin: 0;
+
+  color: #202224;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.headerButton {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #9ca4b0;
+
+  font-size: 19px;
+
+  cursor: pointer;
+}
+
+.headerButton:hover,
+.headerButtonActive {
+  color: #3549d8;
+}
+
+.filterWrapper {
+  position: relative;
+}
+
+.filterMenu {
+  position: absolute;
+
+  top: 36px;
+  right: 0;
+
+  width: 125px;
+
+  padding: 6px;
+
+  border: 1px solid #edf0f4;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 30px rgba(30, 34, 40, 0.1);
+}
+
+.filterMenu button {
+  width: 100%;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 10px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #717986;
+
+  font-family: inherit;
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.filterMenu button:hover,
+.filterMenu .activeFilter {
+  background: #f4f5ff;
+
+  color: #3549d8;
+}
+
+.rows {
+  min-width: 0;
+
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 22px 18px;
+  }
+}

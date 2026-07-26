@@ -1,0 +1,180 @@
+.stats {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  background: #f7f7fb;
+}
+
+/* Individual stat */
+
+.stat {
+  min-width: 0;
+  height: 108px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 32px;
+
+  background: transparent;
+}
+
+/*
+  In the Figma screenshot the first row
+  has white cards while the second row
+  sits on the light section background.
+*/
+
+.stat:nth-child(1),
+.stat:nth-child(2) {
+  background: #ffffff;
+}
+
+/* small separation between columns */
+
+.stat:nth-child(odd) {
+  margin-right: 18px;
+}
+
+.stat:nth-child(even) {
+  margin-left: 18px;
+}
+
+/* Text */
+
+.content {
+  min-width: 0;
+}
+
+.title {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #a1a7b3;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.numberRow {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+.value {
+  color: #25272c;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Percentage */
+
+.change {
+  display: inline-flex;
+  align-items: center;
+
+  margin-top: 4px;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.change svg {
+  width: 15px;
+  height: 15px;
+
+  margin-right: -2px;
+}
+
+.up {
+  color: #28d764;
+}
+
+.down {
+  color: #ff3939;
+}
+
+/* Icons */
+
+.iconBox {
+  width: 52px;
+  height: 52px;
+
+  flex: 0 0 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  color: #ffffff;
+
+  font-size: 24px;
+}
+
+.sent {
+  background: #3549d8;
+}
+
+.paid {
+  background: #08c6eb;
+}
+
+.pending {
+  background: #e928a9;
+}
+
+.unpaid {
+  background: #6716cc;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .stat {
+    padding: 0 20px;
+  }
+
+  .stat:nth-child(odd) {
+    margin-right: 8px;
+  }
+
+  .stat:nth-child(even) {
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    height: 100px;
+
+    margin: 0 !important;
+
+    padding: 0 20px;
+  }
+
+  .stat:nth-child(odd),
+  .stat:nth-child(even) {
+    background: #ffffff;
+  }
+
+  .stat + .stat {
+    border-top: 1px solid #f1f2f6;
+  }
+}

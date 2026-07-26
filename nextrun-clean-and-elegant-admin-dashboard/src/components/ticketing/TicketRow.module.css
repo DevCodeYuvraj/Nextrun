@@ -1,0 +1,207 @@
+.row {
+  position: relative;
+
+  height: 82px;
+
+  background: #ffffff;
+
+  transition:
+    background-color 0.15s ease;
+}
+
+.row td {
+  position: relative;
+
+  padding: 10px 12px;
+
+  border-bottom:
+    1px solid #f2f3f6;
+
+  vertical-align: middle;
+}
+
+.row:hover {
+  background: #fcfcfe;
+}
+
+/* =========================
+   SELECTED ROW
+========================= */
+
+.selected {
+  background: #ffffff;
+}
+
+.selected::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 2;
+
+  width: 3px;
+
+  background: #3549d8;
+}
+
+/* =========================
+   CHECKBOX
+========================= */
+
+.checkboxCell {
+  padding-left: 22px !important;
+  padding-right: 4px !important;
+
+  text-align: center;
+}
+
+.checkboxCell input {
+  width: 15px;
+  height: 15px;
+
+  margin: 0;
+
+  accent-color: #3549d8;
+
+  cursor: pointer;
+}
+
+/* =========================
+   EVENT
+========================= */
+
+.event {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.eventIcon {
+  position: relative;
+
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 3px;
+
+  border-radius: 9px;
+
+  background: #3549d8;
+}
+
+.eventIcon span {
+  width: 3px;
+
+  display: block;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+}
+
+.eventIcon span:nth-child(1) {
+  height: 10px;
+}
+
+.eventIcon span:nth-child(2) {
+  height: 18px;
+}
+
+.eventIcon span:nth-child(3) {
+  height: 13px;
+}
+
+.eventInfo,
+.contactInfo {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.eventInfo strong,
+.contactInfo strong {
+  overflow: hidden;
+
+  color: #303238;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.eventInfo span,
+.contactInfo span {
+  overflow: hidden;
+
+  color: #a5abb5;
+
+  font-size: 9px;
+  font-weight: 400;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  border-radius: 9px;
+
+  background: #9faaba;
+}
+
+/* =========================
+   PRICE / DATE
+========================= */
+
+.price {
+  color: #303238;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.date {
+  color: #9da4af;
+
+  font-size: 10px;
+  font-weight: 400;
+
+  white-space: nowrap;
+}

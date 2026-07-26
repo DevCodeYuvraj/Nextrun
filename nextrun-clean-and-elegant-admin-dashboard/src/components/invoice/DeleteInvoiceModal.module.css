@@ -1,0 +1,127 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(24, 28, 38, 0.42);
+  backdrop-filter: blur(3px);
+}
+
+.modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 420px;
+
+  padding: 34px 28px 28px;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  text-align: center;
+
+  box-shadow: 0 25px 70px rgba(20, 20, 43, 0.18);
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: #f5f6fa;
+
+  color: #6b7280;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.deleteIcon {
+  width: 64px;
+  height: 64px;
+
+  margin: 5px auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: #fff0f0;
+
+  color: #ef5b5b;
+
+  font-size: 32px;
+}
+
+.modal h2 {
+  margin: 0 0 10px;
+
+  color: #202224;
+
+  font-size: 21px;
+}
+
+.modal p {
+  margin: 0;
+
+  color: #858c97;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.modal p strong {
+  color: #525965;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 26px;
+}
+
+.cancel,
+.delete {
+  height: 42px;
+
+  padding: 0 18px;
+
+  border: 0;
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.cancel {
+  background: #f1f3f7;
+  color: #606773;
+}
+
+.delete {
+  background: #ef5b5b;
+  color: #ffffff;
+}

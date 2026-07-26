@@ -1,0 +1,192 @@
+.card {
+  position: relative;
+
+  width: 100%;
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 25px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background:
+    radial-gradient(
+      circle at 90% 5%,
+      rgba(255, 255, 255, 0.18),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #655cf6 0%,
+      #7658ed 55%,
+      #8853e5 100%
+    );
+
+  color: #ffffff;
+
+  box-shadow: 0 14px 32px rgba(99, 91, 255, 0.2);
+}
+
+.card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  top: -105px;
+  right: -75px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  right: -65px;
+  bottom: -90px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.top,
+.middle,
+.bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.balanceLabel {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.top h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.contactless {
+  font-size: 25px;
+
+  transform: rotate(90deg);
+
+  opacity: 0.9;
+}
+
+.middle {
+  margin-top: 20px;
+}
+
+.chip {
+  width: 43px;
+  height: 31px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-bottom: 15px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.chip span {
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.chip span:last-child {
+  border-right: 0;
+}
+
+.number {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-end;
+
+  gap: 22px;
+
+  margin-top: 20px;
+}
+
+.detail {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.detail span {
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 8px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+}
+
+.detail strong {
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.cardIcon {
+  margin-left: auto;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 32px;
+}
