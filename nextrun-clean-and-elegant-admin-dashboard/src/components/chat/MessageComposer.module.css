@@ -1,0 +1,180 @@
+.composer {
+  position: relative;
+
+  padding: 20px 29px 25px;
+
+  border-top: 1px solid #f0f1f4;
+
+  background: #ffffff;
+}
+
+.inputRow {
+  min-height: 58px;
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr) 42px 105px;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 7px 7px 7px 18px;
+
+  border: 1px solid #eceef2;
+  border-radius: 10px;
+
+  background: #fafafd;
+}
+
+.inputRow textarea {
+  width: 100%;
+  max-height: 100px;
+
+  resize: none;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #303238;
+
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.inputRow textarea::placeholder {
+  color: #b0b5bd;
+}
+
+.fileInput {
+  display: none;
+}
+
+.attach {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #9ca4af;
+
+  font-size: 19px;
+
+  cursor: pointer;
+}
+
+.send {
+  width: 105px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #3549d8;
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.send svg {
+  width: 16px;
+  height: 16px;
+}
+
+.attachmentPreview {
+  position: absolute;
+
+  right: 30px;
+  bottom: calc(100% - 12px);
+
+  max-width: 270px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 10px;
+
+  border: 1px solid #e9ebef;
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #6c7480;
+
+  box-shadow:
+    0 8px 25px rgba(30, 38, 55, 0.08);
+}
+
+.attachmentPreview > svg {
+  color: #3549d8;
+}
+
+.attachmentPreview span {
+  min-width: 0;
+
+  overflow: hidden;
+
+  font-size: 8px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attachmentPreview button {
+  display: flex;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #a0a7b0;
+
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .composer {
+    padding: 15px;
+  }
+
+  .inputRow {
+    grid-template-columns:
+      minmax(0, 1fr) 38px 48px;
+  }
+
+  .send {
+    width: 48px;
+  }
+
+  .send span {
+    display: none;
+  }
+}

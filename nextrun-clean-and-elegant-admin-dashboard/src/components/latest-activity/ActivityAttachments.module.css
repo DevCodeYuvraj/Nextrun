@@ -1,0 +1,51 @@
+.attachments {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 11px;
+
+  margin-top: 18px;
+}
+
+.attachment {
+  width: 92px;
+  height: 67px;
+
+  overflow: hidden;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: #a4afbd;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.attachment:hover {
+  transform: translateY(-2px);
+
+  opacity: 0.9;
+}
+
+.preview {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.preview svg {
+  width: 22px;
+  height: 22px;
+}

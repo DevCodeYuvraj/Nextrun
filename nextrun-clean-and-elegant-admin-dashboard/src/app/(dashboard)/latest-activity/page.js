@@ -1,5 +1,5 @@
-import ChatPageContent from "@/components/chat/ChatPageContent";
+import LatestActivityPageContent from "@/components/latest-activity/LatestActivityPageContent";
 
-export default function ChatPage() {
-  return <ChatPageContent />;
+export default function LatestActivityPage() {
+  return <LatestActivityPageContent />;
 }

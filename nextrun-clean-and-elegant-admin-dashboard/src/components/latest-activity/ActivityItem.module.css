@@ -1,0 +1,119 @@
+.item {
+  position: relative;
+
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+
+  gap: 22px;
+
+  min-height: 118px;
+}
+
+.timelineColumn {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+
+/* Larger circular activity/profile indicator */
+.marker {
+  position: relative;
+  z-index: 2;
+
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  flex: 0 0 48px;
+
+  margin-top: 0;
+
+  border: 0;
+  border-radius: 20%;
+
+  box-shadow:
+    0 0 0 6px #f4f5f8;
+
+  background: #3549d8;
+}
+
+/* Timeline starts underneath the profile circle */
+.line {
+  position: absolute;
+
+  top: 50px;
+  bottom: -4px;
+  left: 50%;
+
+  width: 1px;
+
+  transform: translateX(-50%);
+
+  background: #dce1e8;
+}
+
+/* Activity profile colors */
+
+.cyan {
+  background: #10c7e9;
+}
+
+.purple {
+  background: #7415ce;
+}
+
+.pink {
+  background: #e928a9;
+}
+
+.dark {
+  background: #697586;
+}
+
+.blue {
+  background: #3549d8;
+}
+
+.content {
+  min-width: 0;
+
+  padding-top: 3px;
+  padding-bottom: 34px;
+}
+
+.date {
+  margin: 0 0 11px;
+
+  color: #a4abb5;
+
+  font-size: 8px;
+}
+
+.description {
+  margin: 0;
+
+  color: #8b939e;
+
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.description strong {
+  color: #363b43;
+
+  font-weight: 600;
+}
+
+.description .highlight {
+  color: #3549d8;
+}
+
+.last {
+  min-height: auto;
+}
+
+.last .content {
+  padding-bottom: 0;
+}

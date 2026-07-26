@@ -1,0 +1,45 @@
+.wrapper {
+  min-height: 0;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  scrollbar-width: thin;
+}
+
+.messages {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 34px 35px 28px;
+}
+
+.empty {
+  min-height: 100%;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #a3aab4;
+
+  text-align: center;
+}
+
+.empty strong {
+  color: #626a75;
+
+  font-size: 11px;
+}
+
+.empty span {
+  font-size: 9px;
+}

@@ -1,0 +1,146 @@
+.row {
+  position: relative;
+
+  width: 100%;
+  min-width: 780px;
+  min-height: 96px;
+
+  display: grid;
+  grid-template-columns:
+    48px
+    minmax(220px, 1fr)
+    105px
+    140px
+    118px;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 0 22px 0 27px;
+
+  overflow: visible;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 30px
+    rgba(39, 47, 72, 0.025);
+}
+
+.completed::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 7px;
+
+  border-radius:
+    11px 0 0 11px;
+
+  background: #3549d8;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+}
+
+.check input {
+  width: 20px;
+  height: 20px;
+
+  margin: 0;
+
+  accent-color: #3549d8;
+
+  cursor: pointer;
+}
+
+.task {
+  min-width: 0;
+}
+
+.task h3 {
+  margin: 0 0 8px;
+
+  overflow: hidden;
+
+  color: #202224;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task p {
+  margin: 0;
+
+  color: #a7adb7;
+
+  font-size: 9px;
+}
+
+.members {
+  display: flex;
+  align-items: center;
+
+  padding-left: 10px;
+}
+
+.members span {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: -10px;
+
+  border: 2px solid #ffffff;
+  border-radius: 9px;
+
+  background: #9ca8b7;
+
+  color: transparent;
+
+  font-size: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 7px;
+}
+
+.actions > button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #9ba4af;
+
+  font-size: 17px;
+
+  cursor: pointer;
+}

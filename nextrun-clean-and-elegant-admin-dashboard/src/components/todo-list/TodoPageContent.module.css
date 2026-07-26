@@ -1,0 +1,39 @@
+.page {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+  grid-template-columns:
+    265px minmax(0, 1fr);
+
+  gap: 38px;
+
+  align-items: start;
+}
+
+.sidebar,
+.content {
+  min-width: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 26px;
+}
+
+@media (max-width: 1150px) {
+  .page {
+    grid-template-columns:
+      230px minmax(0, 1fr);
+
+    gap: 24px;
+  }
+}
+
+@media (max-width: 850px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+}

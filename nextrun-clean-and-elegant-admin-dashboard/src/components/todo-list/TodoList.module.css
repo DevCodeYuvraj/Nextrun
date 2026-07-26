@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100%;
+  min-width: 0;
+
+  overflow-x: auto;
+
+  padding-bottom: 10px;
+}
+
+.list {
+  min-width: 780px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 19px;
+}
+
+.empty {
+  min-height: 250px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #9ca4af;
+
+  font-size: 11px;
+}

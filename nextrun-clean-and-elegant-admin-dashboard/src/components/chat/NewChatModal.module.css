@@ -1,0 +1,189 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: rgba(25, 29, 40, 0.35);
+
+  backdrop-filter: blur(3px);
+}
+
+.modal {
+  width: min(470px, 100%);
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 25px 70px rgba(25, 29, 40, 0.18);
+}
+
+.header {
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 0 23px;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.title > span {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #eef0ff;
+
+  color: #3549d8;
+
+  font-size: 20px;
+}
+
+.title h3 {
+  margin: 0 0 4px;
+
+  color: #202224;
+
+  font-size: 15px;
+}
+
+.title p {
+  margin: 0;
+
+  color: #9fa6b1;
+
+  font-size: 9px;
+}
+
+.close {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: #f4f5f8;
+
+  color: #747b86;
+
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+
+  padding: 25px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.form label > span {
+  color: #626974;
+
+  font-size: 9px;
+}
+
+.form input {
+  width: 100%;
+  height: 44px;
+
+  padding: 0 13px;
+
+  border: 1px solid #e0e3e9;
+  border-radius: 7px;
+  outline: 0;
+
+  color: #303238;
+
+  font-family: inherit;
+  font-size: 10px;
+}
+
+.form input:focus {
+  border-color: #3549d8;
+}
+
+.error {
+  margin: -5px 0 0;
+
+  color: #e84343;
+
+  font-size: 9px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  padding-top: 5px;
+}
+
+.actions button {
+  height: 40px;
+
+  padding: 0 17px;
+
+  border: 0;
+  border-radius: 7px;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.cancel {
+  background: #f1f2f5;
+
+  color: #747b85;
+}
+
+.create {
+  background: #3549d8;
+
+  color: #ffffff;
+}

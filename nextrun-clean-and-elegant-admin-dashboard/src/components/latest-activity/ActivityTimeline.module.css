@@ -1,0 +1,33 @@
+.timeline {
+  width: 100%;
+  max-width: 1050px;
+}
+
+.group + .group {
+  margin-top: 55px;
+}
+
+.group h2 {
+  margin: 0 0 28px;
+
+  color: #202224;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.items {
+  width: 100%;
+}
+
+.empty {
+  min-height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #9ca4af;
+
+  font-size: 11px;
+}

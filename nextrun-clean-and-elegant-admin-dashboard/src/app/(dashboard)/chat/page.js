@@ -1,5 +1,5 @@
-import TodoPageContent from "@/components/todo-list/TodoPageContent";
+import ChatPageContent from "@/components/chat/ChatPageContent";
 
-export default function TodoListPage() {
-  return <TodoPageContent />;
+export default function ChatPage() {
+  return <ChatPageContent />;
 }
