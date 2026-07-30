@@ -1,0 +1,52 @@
+.badge {
+  width: fit-content;
+  min-width: 72px;
+  height: 34px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0 10px;
+
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+/* PAID */
+
+.paid {
+  background: #2ed35f;
+}
+
+/* UNPAID */
+
+.unpaid {
+  background: #ff1616;
+}
+
+/* PENDING */
+
+.pending {
+  background: #9ba7b8;
+}
+
+/* STATUS ICON */
+
+.icon {
+  width: 14px;
+  height: 14px;
+
+  flex-shrink: 0;
+
+  color: #ffffff;
+}

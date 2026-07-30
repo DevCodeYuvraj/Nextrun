@@ -1,0 +1,84 @@
+.wrapper {
+  width: 100%;
+  min-width: 0;
+
+  overflow: hidden;
+}
+
+.chart {
+  display: block;
+
+  width: 100%;
+  height: 285px;
+}
+
+/* GRID */
+
+.grid {
+  stroke: #edf1f6;
+  stroke-width: 1;
+
+  vector-effect: non-scaling-stroke;
+}
+
+.axis {
+  stroke: #e7ebf1;
+  stroke-width: 1;
+
+  vector-effect: non-scaling-stroke;
+}
+
+/* CANDLES */
+
+.wick {
+  stroke: currentColor;
+  stroke-width: 1.25;
+
+  vector-effect: non-scaling-stroke;
+}
+
+.body {
+  fill: currentColor;
+}
+
+.rising {
+  color: #05d1ec;
+}
+
+.falling {
+  color: #040cf2;
+}
+
+/* AXIS LABELS */
+
+.labels {
+  fill: #a5adbd;
+
+  font-family: inherit;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.labels text {
+  text-anchor: middle;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1400px) {
+  .chart {
+    height: 270px;
+  }
+}
+
+@media (max-width: 900px) {
+  .chart {
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  .chart {
+    height: 240px;
+  }
+}

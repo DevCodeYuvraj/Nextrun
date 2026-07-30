@@ -1,0 +1,153 @@
+.card {
+  width: 100%;
+  min-height: 785px;
+
+  padding: 25px 30px;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 35px
+    rgba(38, 45, 65, 0.025);
+}
+
+.newTask {
+  width: 100%;
+  height: 48px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #3549d8;
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 24px
+    rgba(53, 73, 216, 0.14);
+}
+
+.section {
+  margin-top: 35px;
+}
+
+.heading {
+  margin: 0 0 19px;
+
+  color: #a3a9b3;
+
+  font-size: 11px;
+}
+
+.menu,
+.labels {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.menuItem,
+.labelItem {
+  width: 100%;
+  min-height: 43px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 0 17px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #979faa;
+
+  font-family: inherit;
+  font-size: 11px;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.menuItem svg {
+  width: 17px;
+  height: 17px;
+}
+
+.menuItem.active {
+  color: #3549d8;
+
+  font-weight: 500;
+}
+
+.labelItem {
+  gap: 12px;
+
+  padding-left: 17px;
+}
+
+.labelActive {
+  background: #f7f8fc;
+
+  color: #303238;
+}
+
+.labelIcon {
+  width: 38px;
+  height: 38px;
+
+  flex: 0 0 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  color: #ffffff;
+}
+
+.labelIcon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.high {
+  background: #10c7e9;
+}
+
+.medium {
+  background: #e928a9;
+}
+
+.normal {
+  background: #7415ce;
+}
+
+@media (max-width: 850px) {
+  .card {
+    min-height: auto;
+  }
+
+  .menu,
+  .labels {
+    display: grid;
+    grid-template-columns:
+      repeat(
+        auto-fit,
+        minmax(130px, 1fr)
+      );
+  }
+}

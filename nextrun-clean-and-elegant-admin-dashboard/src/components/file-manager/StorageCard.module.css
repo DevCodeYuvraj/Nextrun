@@ -1,0 +1,146 @@
+.card {
+  width: 100%;
+  min-width: 0;
+  min-height: 160px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  padding: 27px 25px;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 35px
+    rgba(28, 39, 49, 0.035);
+}
+
+.content {
+  min-width: 0;
+}
+
+.eyebrow {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #a6acb7;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.content h3 {
+  margin: 0;
+
+  color: #202224;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.content p {
+  margin: 38px 0 0;
+
+  color: #a1a8b4;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  white-space: nowrap;
+}
+
+.used {
+  color: #a1a8b4;
+}
+
+.separator {
+  color: #a1a8b4;
+}
+
+.total {
+  font-weight: 500;
+}
+
+.dropbox {
+  color: #3549d8;
+}
+
+.google {
+  color: #10c7e9;
+}
+
+.onedrive {
+  color: #e928a9;
+}
+
+.icloud {
+  color: #7415ce;
+}
+
+/* =========================
+   CIRCULAR PROGRESS
+========================= */
+
+.progressRing {
+  --progress: 0deg;
+  --ring-color: #3549d8;
+
+  position: relative;
+
+  width: 48px;
+  height: 48px;
+
+  flex: 0 0 48px;
+
+  border-radius: 50%;
+
+  background:
+    conic-gradient(
+      var(--ring-color) 0deg,
+      var(--ring-color) var(--progress),
+      #f0f1f4 var(--progress),
+      #f0f1f4 360deg
+    );
+
+  transform: rotate(-90deg);
+}
+
+.progressRing > span {
+  position: absolute;
+
+  inset: 8px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+}
+
+.dropboxRing {
+  --ring-color: #3549d8;
+}
+
+.googleRing {
+  --ring-color: #10c7e9;
+}
+
+.onedriveRing {
+  --ring-color: #e928a9;
+}
+
+.icloudRing {
+  --ring-color: #7415ce;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    padding: 24px 20px;
+  }
+}

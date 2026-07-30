@@ -1,0 +1,98 @@
+.card {
+  width: 100%;
+
+  padding: 22px;
+
+  border: 1px solid #f0f1f5;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow: 0 5px 18px rgba(28, 39, 49, 0.035);
+}
+
+.card h3 {
+  margin: 0 0 20px;
+
+  color: #202224;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.recipients {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.recipient {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #efeeff;
+
+  color: #635bff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.recipient:hover .avatar {
+  background: #e6e4ff;
+
+  transform: translateY(-2px);
+}
+
+.name {
+  width: 100%;
+
+  overflow: hidden;
+
+  color: #4d525b;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  text-align: center;
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+  .recipients {
+    grid-template-columns: repeat(2, 1fr);
+
+    row-gap: 18px;
+  }
+}

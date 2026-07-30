@@ -1,0 +1,247 @@
+.panel {
+  width: 100%;
+  min-height: 150px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr
+    1fr
+    1.15fr;
+
+  align-items: center;
+
+  padding: 24px 30px;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 35px rgba(28, 39, 49, 0.035);
+}
+
+.stat {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 0 22px;
+}
+
+.stat:first-child {
+  padding-left: 10px;
+}
+
+.statText {
+  min-width: 0;
+}
+
+.label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #a3a9b4;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  white-space: nowrap;
+}
+
+.valueRow {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+.valueRow strong {
+  color: #202224;
+
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.change {
+  display: inline-flex;
+  align-items: center;
+
+  margin-top: 5px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.change svg {
+  width: 17px;
+  height: 17px;
+
+  margin-right: -3px;
+}
+
+.up {
+  color: #2fd565;
+}
+
+.down {
+  color: #f21e1e;
+}
+
+/* Ticket icons */
+
+.ticketIcon {
+  width: 64px;
+  height: 64px;
+
+  flex: 0 0 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  color: #ffffff;
+
+  font-size: 31px;
+}
+
+.cyanIcon {
+  background: #10c7e9;
+}
+
+.blueIcon {
+  background: #3549d8;
+}
+
+/* Mini chart */
+
+.miniChart {
+  height: 66px;
+
+  display: flex;
+  align-items: flex-end;
+
+  gap: 10px;
+
+  padding: 0 4px;
+}
+
+.miniChart span {
+  width: 8px;
+
+  min-height: 8px;
+
+  display: block;
+
+  border-radius: 5px;
+}
+
+.chartBlue {
+  background: #3549d8;
+}
+
+.chartCyan {
+  background: #18cbe9;
+}
+
+/* Target */
+
+.target {
+  min-width: 0;
+
+  padding: 0 12px 0 30px;
+}
+
+.target h3 {
+  margin: 0 0 18px;
+
+  color: #30324b;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.targetTrack {
+  width: 100%;
+  height: 12px;
+
+  overflow: hidden;
+
+  border-radius: 3px;
+
+  background: #f0eff4;
+}
+
+.targetTrack span {
+  display: block;
+
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #7415ce;
+}
+
+.target p {
+  margin: 10px 0 0;
+
+  color: #5c6370;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.target p strong {
+  color: #30324b;
+
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .panel {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 30px 0;
+  }
+
+  .target {
+    padding-left: 22px;
+  }
+}
+
+@media (max-width: 650px) {
+  .panel {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    padding: 25px 20px;
+  }
+
+  .stat,
+  .stat:first-child,
+  .target {
+    padding: 0;
+  }
+
+  .stat {
+    justify-content: flex-start;
+  }
+
+  .ticketIcon,
+  .miniChart {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,270 @@
+.card {
+  position: relative;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 190px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 28px 35px;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 35px
+    rgba(28, 39, 49, 0.035);
+}
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatarFrame {
+  width: 132px;
+  height: 132px;
+
+  flex: 0 0 132px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px;
+
+  border: 1px solid #d9dde4;
+  border-radius: 17px;
+
+  background: #ffffff;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 11px;
+
+  background: #9faaba;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  min-width: 0;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+.identity h2 {
+  margin: 0 0 8px;
+
+  color: #202224;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.identity p {
+  margin: 0;
+
+  color: #202224;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* =========================
+   DETAILS
+========================= */
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 26px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #303238;
+
+  font-size: 11px;
+  font-weight: 400;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+.detailIcon {
+  width: 34px;
+  height: 34px;
+
+  flex: 0 0 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  color: #ffffff;
+
+  font-size: 19px;
+}
+
+.location {
+  background: #3549d8;
+}
+
+.phone {
+  background: #10c7e9;
+}
+
+.email {
+  background: #e928a9;
+}
+
+/* =========================
+   MORE MENU
+========================= */
+
+.menuWrapper {
+  position: absolute;
+
+  top: 25px;
+  right: 27px;
+}
+
+.moreButton {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #99a1ad;
+
+  font-size: 21px;
+
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+
+  top: 34px;
+  right: 0;
+
+  z-index: 30;
+
+  width: 145px;
+
+  padding: 6px;
+
+  border: 1px solid #eceef3;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 30px
+    rgba(30, 34, 45, 0.12);
+}
+
+.menu button {
+  width: 100%;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 9px;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #59606b;
+
+  font-family: inherit;
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background: #f5f6fa;
+
+  color: #3549d8;
+}
+
+.menu svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 700px) {
+  .card {
+    align-items: flex-start;
+
+    padding: 25px;
+
+    gap: 22px;
+  }
+
+  .avatarFrame {
+    width: 105px;
+    height: 105px;
+
+    flex-basis: 105px;
+  }
+
+  .details {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .identity h2 {
+    padding-right: 35px;
+  }
+}

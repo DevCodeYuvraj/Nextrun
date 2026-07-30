@@ -1,0 +1,322 @@
+.previewPanel {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px 24px 32px;
+
+  background: #edf2f8;
+}
+
+/* ================================
+   TOP
+================================ */
+
+.previewTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.previewTitle {
+  margin: 0 0 6px;
+
+  color: #252b36;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inboxText {
+  color: #a5adba;
+
+  font-size: 9px;
+}
+
+.topActions {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.topActions button,
+.labelActions button,
+.formatToolbar button,
+.attachmentTools button {
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  background: transparent;
+  color: #9da8b8;
+
+  cursor: pointer;
+}
+
+/* ================================
+   LABEL
+================================ */
+
+.labelRow {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mailLabel {
+  min-height: 28px;
+
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  border-radius: 3px;
+
+  font-size: 9px;
+}
+
+.workLabel {
+  background: #fbe5f5;
+  color: #ed2ca9;
+}
+
+.importantLabel {
+  background: #eff0ff;
+  color: #4b46e5;
+}
+
+.labelActions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ================================
+   SUBJECT
+================================ */
+
+.subject {
+  max-width: 230px;
+
+  margin: 17px 0 0;
+
+  color: #252b36;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* ================================
+   DATE
+================================ */
+
+.date {
+  margin: 13px 0 0;
+
+  color: #a4adba;
+
+  font-size: 8px;
+}
+
+/* ================================
+   SENDER
+================================ */
+
+.sender {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: linear-gradient(
+    135deg,
+    #4b46e5,
+    #7868ff
+  );
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+.senderDetails h4 {
+  margin: 0 0 3px;
+
+  color: #252b36;
+
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.senderDetails p {
+  margin: 0;
+
+  color: #a4adba;
+
+  font-size: 8px;
+}
+
+/* ================================
+   MESSAGE
+================================ */
+
+.message {
+  margin-top: 18px;
+
+  color: #505967;
+
+  font-size: 8px;
+  line-height: 1.45;
+}
+
+.message p {
+  margin: 0 0 14px;
+}
+
+/* ================================
+   REPLY SECTION
+================================ */
+
+.replySection {
+  margin-top: auto;
+}
+
+.editor {
+  overflow: hidden;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+}
+
+.editor textarea {
+  width: 100%;
+  height: 78px;
+
+  padding: 16px 18px;
+
+  display: block;
+
+  resize: none;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #596274;
+
+  font-family: inherit;
+  font-size: 9px;
+}
+
+.editor textarea::placeholder {
+  color: #b3bbc7;
+}
+
+/* ================================
+   FORMAT TOOLBAR
+================================ */
+
+.formatToolbar {
+  height: 34px;
+
+  padding: 0 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid #dfe4eb;
+}
+
+.textTools,
+.alignTools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.formatToolbar button {
+  font-size: 12px;
+}
+
+.textTools button:first-child {
+  color: #4b46e5;
+}
+
+/* ================================
+   SEND TOOLBAR
+================================ */
+
+.sendToolbar {
+  margin-top: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attachmentTools {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.attachmentTools button {
+  font-size: 15px;
+}
+
+/* ================================
+   SEND BUTTON
+================================ */
+
+.sendButton {
+  height: 38px;
+
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #4b46e5;
+  color: #ffffff;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background: #403bd1;
+}

@@ -1,0 +1,148 @@
+.toolbar {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+
+.breadcrumb {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #a1a8b4;
+
+  white-space: nowrap;
+}
+
+.breadcrumb button,
+.breadcrumb span {
+  border: 0;
+
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 400;
+
+  white-space: nowrap;
+}
+
+.breadcrumb button {
+  padding: 0;
+
+  color: #a1a8b4;
+
+  cursor: pointer;
+}
+
+.breadcrumb button:hover {
+  color: #3549d8;
+}
+
+.breadcrumb span {
+  overflow: hidden;
+
+  color: #303238;
+
+  text-overflow: ellipsis;
+}
+
+.breadcrumb svg {
+  width: 15px;
+  height: 15px;
+
+  flex: 0 0 15px;
+
+  color: #b8bec7;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.searchBox {
+  width: 235px;
+  height: 42px;
+
+  flex: 0 0 235px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 15px;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 7px 25px
+    rgba(28, 39, 49, 0.025);
+}
+
+.searchBox svg {
+  width: 18px;
+  height: 18px;
+
+  flex: 0 0 18px;
+
+  color: #303238;
+}
+
+.searchBox input {
+  width: 100%;
+  min-width: 0;
+
+  padding: 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #303238;
+
+  font-family: inherit;
+  font-size: 10px;
+}
+
+.searchBox input::placeholder {
+  color: #a8aeb8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 650px) {
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .searchBox {
+    width: 100%;
+
+    flex-basis: auto;
+  }
+
+  .breadcrumb {
+    overflow-x: auto;
+  }
+}

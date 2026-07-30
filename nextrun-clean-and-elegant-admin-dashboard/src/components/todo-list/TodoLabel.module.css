@@ -1,0 +1,34 @@
+.label {
+  width: 97px;
+  height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: 10px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.label svg {
+  width: 13px;
+  height: 13px;
+}
+
+.high {
+  background: #10c7e9;
+}
+
+.medium {
+  background: #e928a9;
+}
+
+.normal {
+  background: #7415ce;
+}

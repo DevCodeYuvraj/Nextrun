@@ -1,0 +1,45 @@
+.menu {
+  position: absolute;
+  top: 38px;
+  right: 0;
+
+  width: 200px;
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+
+  overflow: hidden;
+
+  z-index: 100;
+}
+
+.menu button {
+  width: 100%;
+
+  padding: 13px 16px;
+
+  border: none;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: .2s;
+}
+
+.menu button:hover {
+  background: #f5f7fb;
+}
+
+.delete {
+  color: #ef4444;
+}

@@ -1,0 +1,59 @@
+.header {
+  width: 100%;
+  min-height: 84px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 0 26px;
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 35px
+    rgba(38, 45, 65, 0.025);
+}
+
+.header h2 {
+  margin: 0;
+
+  color: #202224;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.views {
+  display: flex;
+
+  gap: 11px;
+}
+
+.views button {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: #f5f5f8;
+
+  color: #9ca4af;
+
+  font-size: 21px;
+
+  cursor: pointer;
+}
+
+.views button.active {
+  color: #3549d8;
+}

@@ -1,0 +1,134 @@
+.contacts {
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 18px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: var(--text-primary);
+}
+
+.contactList {
+  width: 100%;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.contactItem:first-child {
+  padding-top: 0;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  background: #a0aec0;
+
+  border-radius: 8px;
+}
+
+.contactInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  margin-bottom: 3px;
+
+  overflow: hidden;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  color: var(--text-primary);
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.role {
+  overflow: hidden;
+
+  font-size: 9px;
+
+  color: var(--text-secondary);
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.emailButton {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: var(--surface);
+
+  color: var(--primary);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.emailButton:hover {
+  background: #e8edff;
+  transform: scale(1.05);
+}
+
+.emailButton:active {
+  transform: scale(0.95);
+}
+
+.viewMoreButton {
+  width: 100%;
+
+  margin-top: 16px;
+  padding: 11px 15px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: var(--surface);
+
+  color: var(--primary);
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.viewMoreButton:hover {
+  background: #e8edff;
+}
+
+.viewMoreButton:active {
+  transform: scale(0.98);
+}

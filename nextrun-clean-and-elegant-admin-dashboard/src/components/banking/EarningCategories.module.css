@@ -1,0 +1,163 @@
+.card {
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px 25px 24px;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 35px rgba(28, 39, 49, 0.035);
+}
+
+.card h3 {
+  margin: 0 0 30px;
+
+  color: #202224;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+
+  gap: 27px;
+}
+
+.category {
+  min-width: 0;
+}
+
+.title {
+  display: block;
+
+  margin-bottom: 13px;
+
+  color: #303238;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.track {
+  position: relative;
+
+  width: 100%;
+  height: 10px;
+
+  overflow: hidden;
+
+  border-radius: 3px;
+
+  background: #f0f1f4;
+}
+
+.progress {
+  display: block;
+
+  height: 100%;
+
+  border-radius: 3px;
+}
+
+.working {
+  background: #10c7e9;
+}
+
+.project {
+  background: #3549d8;
+}
+
+.investment {
+  background: #e928a9;
+}
+
+.digital {
+  background: #7415ce;
+}
+
+.other {
+  background: #10c7e9;
+}
+
+.savings {
+  background: #3549d8;
+}
+
+.category p {
+  margin: 12px 0 0;
+
+  color: #303238;
+
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.category p span {
+  color: #10c7e9;
+   background: transparent;
+}
+
+.category p .project {
+  color: #3549d8;
+
+  background: transparent;
+}
+
+.category p .investment {
+  color: #e928a9;
+
+  background: transparent;
+}
+
+.category p .digital {
+  color: #7415ce;
+
+  background: transparent;
+}
+
+.otherText {
+  color: #10c7e9 !important;
+}
+
+.viewMore {
+  width: 100%;
+  height: 46px;
+
+  margin-top: auto;
+  padding: 0 15px;
+
+  border: 0;
+  border-radius: 9px;
+
+  background: #f4f4f8;
+
+  color: #3549d8;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.viewMore:hover {
+  background: #eceefe;
+}
+
+@media (max-width: 1350px) {
+  .viewMore {
+    margin-top: 30px;
+  }
+}

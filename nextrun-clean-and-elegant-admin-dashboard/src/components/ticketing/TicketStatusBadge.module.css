@@ -1,0 +1,44 @@
+.badge {
+  width: fit-content;
+  min-width: 68px;
+  height: 31px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  padding: 0 9px;
+
+  border-radius: 7px;
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1;
+
+  white-space: nowrap;
+}
+
+.paid {
+  background: #2ed35f;
+}
+
+.unpaid {
+  background: #f21e1e;
+}
+
+.pending {
+  background: #9da8b8;
+}
+
+.icon {
+  width: 13px;
+  height: 13px;
+
+  flex: 0 0 13px;
+
+  color: #ffffff;
+}

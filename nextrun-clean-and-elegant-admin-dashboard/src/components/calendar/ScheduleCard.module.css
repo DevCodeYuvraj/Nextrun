@@ -1,0 +1,90 @@
+.card {
+  position: relative;
+
+  width: 100%;
+  min-height: 132px;
+
+  display: flex;
+
+  padding: 20px 17px 18px 21px;
+
+  overflow: hidden;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  font-family: inherit;
+  text-align: left;
+
+  box-shadow:
+    0 5px 20px
+    rgba(31, 39, 55, 0.025);
+
+  cursor: pointer;
+}
+
+.marker {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 4px;
+}
+
+.content {
+  min-width: 0;
+}
+
+.content h4 {
+  margin: 0 0 12px;
+
+  color: #303238;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.meta span {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #969eaa;
+
+  font-size: 8px;
+}
+
+.meta svg {
+  width: 12px;
+  height: 12px;
+
+  color: #a8aeba;
+}
+
+.purple {
+  background: #7415ce;
+}
+
+.pink {
+  background: #e928a9;
+}
+
+.cyan {
+  background: #10c7e9;
+}
+
+.blue {
+  background: #3549d8;
+}

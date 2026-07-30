@@ -1,0 +1,238 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+  justify-content: flex-end;
+
+  background:
+    rgba(26, 30, 41, 0.25);
+}
+
+.panel {
+  width: min(420px, 100%);
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
+  box-shadow:
+    -15px 0 45px
+    rgba(25, 29, 40, 0.12);
+}
+
+.header {
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 18px 22px;
+
+  border-bottom:
+    1px solid #eef0f4;
+}
+
+.header > div {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+
+  flex: 0 0 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #9faaba;
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.header h3 {
+  margin: 0 0 4px;
+
+  color: #303238;
+
+  font-size: 13px;
+}
+
+.header span {
+  color: #a0a7b2;
+
+  font-size: 9px;
+}
+
+.header > button {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #f4f5f8;
+
+  color: #747b86;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.messages {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  padding: 22px;
+
+  overflow-y: auto;
+
+  background: #f8f9fc;
+}
+
+.message {
+  max-width: 78%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.message > div {
+  padding: 11px 13px;
+
+  border-radius: 11px;
+
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.message > span {
+  color: #a0a7b2;
+
+  font-size: 8px;
+}
+
+.theirs {
+  align-self: flex-start;
+}
+
+.theirs > div {
+  border-bottom-left-radius: 3px;
+
+  background: #ffffff;
+
+  color: #4f5661;
+}
+
+.mine {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.mine > div {
+  border-bottom-right-radius: 3px;
+
+  background: #3549d8;
+
+  color: #ffffff;
+}
+
+.empty {
+  margin: auto;
+
+  color: #a0a7b2;
+
+  font-size: 10px;
+
+  text-align: center;
+}
+
+.composer {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 16px 20px;
+
+  border-top:
+    1px solid #eef0f4;
+}
+
+.composer input {
+  min-width: 0;
+  height: 43px;
+
+  flex: 1;
+
+  padding: 0 13px;
+
+  border: 1px solid #e0e3e9;
+  border-radius: 8px;
+  outline: 0;
+
+  font-family: inherit;
+  font-size: 10px;
+}
+
+.composer input:focus {
+  border-color: #3549d8;
+}
+
+.composer button {
+  width: 43px;
+  height: 43px;
+
+  flex: 0 0 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #3549d8;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.composer button:disabled {
+  opacity: 0.45;
+
+  cursor: default;
+}

@@ -1,0 +1,103 @@
+.message {
+  max-width: 72%;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 23px;
+}
+
+.theirs {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.mine {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.bubble {
+  min-width: 100px;
+
+  padding: 14px 17px;
+
+  border-radius: 9px;
+
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+.theirs .bubble {
+  border-bottom-left-radius: 2px;
+
+  background: #f4f5f8;
+
+  color: #59616d;
+}
+
+.mine .bubble {
+  border-bottom-right-radius: 2px;
+
+  background: #3549d8;
+
+  color: #ffffff;
+}
+
+.bubble p {
+  margin: 0;
+}
+
+.message time {
+  margin-top: 7px;
+
+  color: #a9afb8;
+
+  font-size: 7px;
+}
+
+.attachment {
+  min-width: 200px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.attachment > svg {
+  width: 25px;
+  height: 25px;
+
+  flex: 0 0 auto;
+}
+
+.attachment div {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.attachment strong {
+  overflow: hidden;
+
+  font-size: 9px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attachment span {
+  font-size: 7px;
+
+  opacity: 0.75;
+}
+
+@media (max-width: 600px) {
+  .message {
+    max-width: 88%;
+  }
+}

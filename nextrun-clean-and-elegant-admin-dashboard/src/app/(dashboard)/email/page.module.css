@@ -1,0 +1,9 @@
+.emailPage {
+  width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 250px minmax(420px, 1fr) 290px;
+
+  background: #f5f7fb;
+}

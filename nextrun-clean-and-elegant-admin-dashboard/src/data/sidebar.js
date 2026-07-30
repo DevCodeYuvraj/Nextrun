@@ -1,0 +1,103 @@
+import {
+  MdDashboard,
+  MdEmail,
+  MdContacts,
+  MdCurrencyBitcoin,
+  MdViewKanban,
+  MdReceipt,
+  MdAccountBalance,
+  MdConfirmationNumber,
+  MdFolder,
+  MdPerson,
+  MdCalendarMonth,
+  MdChecklist,
+  MdChat,
+  MdHistory,
+} from "react-icons/md";
+
+export const sidebarItems = [
+  {
+    id: 1,
+    title: "Dashboard",
+    icon: MdDashboard,
+    path: "/dashboard",
+  },
+  {
+    id: 2,
+    title: "Email",
+    icon: MdEmail,
+    path: "/email",
+  },
+  {
+    id: 3,
+    title: "Contacts",
+    icon: MdContacts,
+    path: "/contacts",
+  },
+  {
+    id: 4,
+    title: "Crypto",
+    icon: MdCurrencyBitcoin,
+    path: "/crypto",
+  },
+  {
+    id: 5,
+    title: "Kanban",
+    icon: MdViewKanban,
+    path: "/kanban",
+  },
+  {
+    id: 6,
+    title: "Invoice",
+    icon: MdReceipt,
+    path: "/invoice",
+  },
+  {
+    id: 7,
+    title: "Banking",
+    icon: MdAccountBalance,
+    path: "/banking",
+  },
+  {
+    id: 8,
+    title: "Ticketing",
+    icon: MdConfirmationNumber,
+    path: "/ticketing",
+  },
+  {
+    id: 9,
+    title: "File Manager",
+    icon: MdFolder,
+    path: "/file-manager",
+  },
+  {
+    id: 10,
+    title: "User",
+    icon: MdPerson,
+    path: "/user",
+  },
+  {
+    id: 11,
+    title: "Calendar",
+    icon: MdCalendarMonth,
+    path: "/calendar",
+  },
+  {
+    id: 12,
+    title: "Todo List",
+    icon: MdChecklist,
+    path: "/todo-list",
+  },
+  {
+    id: 13,
+    title: "Chat",
+    icon: MdChat,
+    path: "/chat",
+  },
+  {
+    id: 14,
+    title: "Latest Activity",
+    icon: MdHistory,
+    path: "/latest-activity",
+  },
+];

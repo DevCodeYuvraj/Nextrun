@@ -1,0 +1,179 @@
+.mailSidebar {
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+
+  padding: 28px 24px;
+
+  background: #ffffff;
+}
+
+.newMessageButton {
+  width: 100%;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 24px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #4b46e5;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.folderNavigation {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.folderItem {
+  width: 100%;
+  height: 42px;
+
+  padding: 0 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: none;
+  border-radius: 7px;
+
+  background: transparent;
+  color: #929bad;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.folderItem:hover {
+  background: #f5f6ff;
+  color: #4b46e5;
+}
+
+.folderInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.activeFolder {
+  color: #4b46e5;
+}
+
+.folderCount {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #16c7e9;
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.labelsSection {
+  margin-top: 28px;
+}
+
+.labelsHeader {
+  margin-bottom: 10px;
+  padding: 0 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #b0b7c5;
+
+  font-size: 11px;
+}
+
+.moreButton {
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  border: none;
+
+  background: transparent;
+  color: #929bad;
+
+  cursor: pointer;
+}
+
+.labelsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.labelItem,
+.addLabelButton {
+  width: 100%;
+  height: 38px;
+
+  padding: 0 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  border: none;
+
+  background: transparent;
+  color: #929bad;
+
+  font-size: 11px;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.labelItem:hover,
+.addLabelButton:hover {
+  color: #4b46e5;
+}
+
+.pink {
+  color: #ed2ca9;
+}
+
+.cyan {
+  color: #08bfe5;
+}
+
+.blue {
+  color: #4b46e5;
+}
+
+.purple {
+  color: #7524c8;
+}
+.activeLabel {
+  background: #f5f6ff;
+  color: #4b46e5;
+}

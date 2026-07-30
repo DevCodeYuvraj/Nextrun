@@ -1,0 +1,54 @@
+/* src/components/invoice/PreviewCard.module.css */
+
+.card {
+  background: linear-gradient(
+    135deg,
+    #5b5ce2,
+    #7a5cff
+  );
+
+  color: white;
+
+  border-radius: 22px;
+
+  padding: 28px;
+
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 15px 40px rgba(91, 92, 226, .25);
+}
+
+.balanceLabel {
+  font-size: 13px;
+  opacity: .8;
+}
+
+.top h2 {
+  margin-top: 8px;
+  font-size: 34px;
+}
+
+.number {
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom span {
+  opacity: .75;
+  font-size: 12px;
+}
+
+.bottom p {
+  margin-top: 4px;
+  font-weight: 600;
+}

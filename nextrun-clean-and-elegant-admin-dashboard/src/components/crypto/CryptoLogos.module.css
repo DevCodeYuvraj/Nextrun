@@ -1,0 +1,66 @@
+.logo {
+  width: 56px;
+  height: 56px;
+  display: block;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.logo circle {
+  transition: filter 0.25s ease;
+}
+
+.logo:hover {
+  transform: scale(1.06);
+}
+
+.logo:hover circle {
+  filter: brightness(1.05);
+}
+
+.small {
+  width: 40px;
+  height: 40px;
+}
+
+.medium {
+  width: 48px;
+  height: 48px;
+}
+
+.large {
+  width: 56px;
+  height: 56px;
+}
+
+.xlarge {
+  width: 64px;
+  height: 64px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .small {
+    width: 34px;
+    height: 34px;
+  }
+
+  .medium {
+    width: 40px;
+    height: 40px;
+  }
+
+  .large {
+    width: 48px;
+    height: 48px;
+  }
+
+  .xlarge {
+    width: 56px;
+    height: 56px;
+  }
+}

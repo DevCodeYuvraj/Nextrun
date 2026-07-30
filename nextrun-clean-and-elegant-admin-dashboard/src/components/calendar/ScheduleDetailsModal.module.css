@@ -1,0 +1,240 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(25, 29, 40, 0.34);
+
+  backdrop-filter: blur(3px);
+}
+
+.modal {
+  width: min(500px, 100%);
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 25px 70px
+    rgba(25, 29, 40, 0.18);
+}
+
+.header {
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 23px;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+.header h3 {
+  margin: 0;
+
+  color: #202224;
+
+  font-size: 15px;
+}
+
+.header button {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: #f4f5f8;
+
+  color: #747b86;
+
+  cursor: pointer;
+}
+
+.details {
+  position: relative;
+
+  padding: 28px 26px 26px 31px;
+}
+
+.marker {
+  position: absolute;
+
+  top: 28px;
+  bottom: 26px;
+  left: 0;
+
+  width: 4px;
+}
+
+.details h2 {
+  margin: 0 0 20px;
+
+  color: #303238;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+.meta span {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #89919d;
+
+  font-size: 10px;
+}
+
+.meta svg {
+  color: #a2a9b4;
+
+  font-size: 14px;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  padding: 25px;
+}
+
+.editForm label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.editForm label span {
+  color: #5e6570;
+
+  font-size: 9px;
+}
+
+.editForm input {
+  width: 100%;
+  height: 42px;
+
+  padding: 0 12px;
+
+  border: 1px solid #e0e3e9;
+  border-radius: 7px;
+  outline: 0;
+
+  font-family: inherit;
+  font-size: 10px;
+}
+
+.editForm input:focus {
+  border-color: #3549d8;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  padding: 18px 24px 24px;
+}
+
+.editForm .actions {
+  padding: 5px 0 0;
+}
+
+.actions button {
+  min-height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0 16px;
+
+  border: 0;
+  border-radius: 7px;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.cancel {
+  background: #f1f2f5;
+
+  color: #737a85;
+}
+
+.delete {
+  background: #fff0f0;
+
+  color: #ed4141;
+}
+
+.save {
+  background: #3549d8;
+
+  color: #ffffff;
+}
+
+.purple {
+  background: #7415ce;
+}
+
+.pink {
+  background: #e928a9;
+}
+
+.cyan {
+  background: #10c7e9;
+}
+
+.blue {
+  background: #3549d8;
+}
+
+@media (max-width: 520px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
