@@ -1,0 +1,216 @@
+.wrapper {
+  position: relative;
+  width: 320px;
+}
+
+.search {
+  width: 100%;
+  height: 46px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7edf5;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 14px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search:focus-within,
+.focused {
+  border-color: #d7dcff;
+
+  box-shadow:
+    0 0 0 3px rgba(79, 70, 229, 0.06);
+}
+
+.search svg {
+  flex: 0 0 auto;
+  color: #98a2b3;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+
+  margin-left: 10px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #202224;
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.search input::placeholder {
+  color: #98a2b3;
+}
+
+.dropdown {
+  position: absolute;
+
+  top: calc(100% + 10px);
+  left: 0;
+
+  z-index: 1000;
+
+  width: 100%;
+  min-width: 320px;
+
+  overflow: hidden;
+
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 45px rgba(31, 38, 61, 0.12);
+}
+
+.dropdownHeader {
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 16px;
+
+  border-bottom: 1px solid #f0f2f6;
+}
+
+.dropdownHeader span {
+  color: #202224;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.dropdownHeader small {
+  color: #98a2b3;
+
+  font-size: 9px;
+}
+
+.results {
+  padding: 7px;
+}
+
+.result {
+  width: 100%;
+  min-height: 57px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 7px 9px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: transparent;
+
+  font-family: inherit;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.result:hover,
+.activeResult {
+  background: #f7f8fc;
+}
+
+.resultIcon {
+  width: 38px;
+  height: 38px;
+
+  flex: 0 0 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #eef0ff;
+
+  color: #4f46e5;
+
+  font-size: 18px;
+}
+
+.resultText {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.resultText strong {
+  color: #303238;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.resultText small {
+  color: #9ca4af;
+
+  font-size: 8px;
+}
+
+.empty {
+  min-height: 145px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  color: #9ca4af;
+}
+
+.empty > svg {
+  width: 25px;
+  height: 25px;
+
+  margin-bottom: 3px;
+}
+
+.empty strong {
+  color: #606873;
+
+  font-size: 10px;
+}
+
+.empty span {
+  font-size: 8px;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    width: 220px;
+  }
+
+  .dropdown {
+    min-width: 300px;
+  }
+}

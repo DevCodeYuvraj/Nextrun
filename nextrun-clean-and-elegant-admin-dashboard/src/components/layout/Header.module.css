@@ -1,120 +1,84 @@
 .header {
+  position: relative;
+  z-index: 100;
+
   height: 86px;
+
   padding: 0 24px;
+
   background: #f8fafc;
+
   border-bottom: 1px solid #eef2f7;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .left {
+  min-width: 0;
+
   display: flex;
   align-items: center;
 }
 
 .title {
   margin: 0;
+
+  color: #202224;
+
   font-size: 28px;
   font-weight: 700;
-  color: #202224;
 }
 
 .actions {
   display: flex;
   align-items: center;
+
   gap: 16px;
-}
-
-.search {
-  width: 320px;
-  height: 46px;
-  background: #fff;
-  border: 1px solid #e7edf5;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  padding: 0 14px;
-}
-
-.search svg {
-  color: #98a2b3;
-}
-
-.search input {
-  flex: 1;
-  margin-left: 10px;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 14px;
-}
-
-.search input::placeholder {
-  color: #98a2b3;
-}
-
-.iconButton {
-  width: 46px;
-  height: 46px;
-  border: 1px solid #e7edf5;
-  background: #fff;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.iconButton:hover {
-  background: #f5f8ff;
-}
-
-.iconButton svg {
-  color: #5b6576;
-}
-
-.badge {
-  position: absolute;
-  top: 11px;
-  right: 11px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #ff5b5b;
 }
 
 .profile {
   display: flex;
   align-items: center;
+
   gap: 12px;
 }
 
 .avatar {
   width: 46px;
   height: 46px;
+
+  flex: 0 0 46px;
+
   border-radius: 12px;
+
   background: #4f46e5;
-  color: #fff;
+
+  color: #ffffff;
+
   font-weight: 700;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   user-select: none;
 }
 
 .userInfo h4 {
   margin: 0;
+
+  color: #202224;
+
   font-size: 14px;
   font-weight: 700;
-  color: #202224;
 }
 
 .userInfo span {
-  font-size: 12px;
   color: #98a2b3;
+
+  font-size: 12px;
 }
 
 .arrow {
@@ -122,10 +86,6 @@
 }
 
 @media (max-width: 992px) {
-  .search {
-    width: 220px;
-  }
-
   .userInfo,
   .arrow {
     display: none;
